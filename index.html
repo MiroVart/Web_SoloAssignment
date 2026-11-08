@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Opiskelijaravintolat</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <h1>Opiskelijaravintolat</h1>
+      <button type="button" id="login-button" class="btn">Kirjaudu</button>
+    </header>
+
+    <main class="layout">
+      <form id="filter-form" class="filters">
+        <label>
+          Kaupunki
+          <select id="city-select">
+            <option value="">Kaikki</option>
+          </select>
+        </label>
+        <label>
+          Palveluntarjoaja
+          <select id="company-select">
+            <option value="">Kaikki</option>
+          </select>
+        </label>
+        <button type="button" id="nearest-button" class="btn">
+          Etsi lähin
+        </button>
+      </form>
+
+      <div class="content">
+        <section>
+          <h2>Ravintolat</h2>
+          <ul id="restaurant-list" class="restaurant-list"></ul>
+        </section>
+        <div id="map" class="map"></div>
+      </div>
+    </main>
+    <!-- dialog for login and menu -->
+  </body>
+</html>
